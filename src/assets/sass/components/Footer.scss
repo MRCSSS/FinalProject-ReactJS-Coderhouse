@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import '../base';
+
+$soyMSSfont: "Press Start 2P", cursive;
+$soyMSScolor: #cccccc;
+
+.footer{
+    margin: 0;
+    max-width: 100% !important;
+    height: 290px;
+    background-color: $fondoObscuro !important;
+    padding: 40px 20px 10px 20px !important;
+    color: rgba($azul,0.8);
+    font-family: $soyMSSfont;
+    font-size: 10px;
+    hr{
+        background-color: rgba($azul,0.4);
+    }
+    .soyMSSinfo{
+        width: 100%;
+        margin-top: 28px;
+        font-size: 8px;
+        color: rgba($soyMSScolor,0.7) ;
+        hr{
+            margin: 5px 0;
+            background-color: rgba($soyMSScolor,0.4);
+        }
+        .MSSicons {
+           .iconLink{
+                color: rgba($soyMSScolor,0.7);
+                width: 30px;
+                transition: color 150ms;
+            }
+            .iconLink:hover{
+                cursor: pointer;
+                color: rgba($soyMSScolor,0.2);
+            }
+        }
+        .MSS{
+            .MSSlink{
+                color: $soyMSScolor;
+                text-decoration: underline $soyMSScolor;
+                transition: color 150ms;
+            }
+            .MSSlink:hover{
+                color: rgba($soyMSScolor,0.2) ;
+            }
+        }
+    }
+}

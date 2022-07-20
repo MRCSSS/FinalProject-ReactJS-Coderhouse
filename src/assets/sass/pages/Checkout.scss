@@ -1,0 +1,319 @@
+@import '../base';
+
+.CheckoutTitle{
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    color: $amarillo;
+    font-family: $titleFont;
+}
+.CheckoutBox{
+    margin: 0 15px;
+    padding: 15px;
+    background-color: $fondoMedio;
+    .columns{
+        .box{
+            margin: 15px;
+            padding: 10px;
+            background-color: rgba($azul, 0.5);
+            color: $blanco;
+            h3{
+                font-size: 24px;
+                text-shadow: 1px 2px 2px $rojo;
+                color: $amarillo;
+                font-family: $titleFont;
+            }
+        }
+        .serviceContainer{
+            .subtotalDescription{
+                font-family: $slimFont;
+                .subtotalTitle{
+                    text-align: left;
+                    color: $amarillo;
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-shadow: 2px 2px 1px rgba($fondoObscuro, 0.8);
+                    .fa-xmark{
+                        font-size: 20px;
+                    }
+                }
+                .subtotalContent{
+                    color: rgba($amarillo,0.9);
+                    font-weight: 400;
+                    font-size: 14px;
+                    .fa-xmark{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .subTotal{
+                font-family: $slimFont;
+                letter-spacing: 2px;
+                font-weight: 600;
+                font-size: 20px;
+                text-shadow: 3px 3px 1px rgba($fondoObscuro, 0.8);
+            }
+        }
+        hr {
+            margin: 15px 0 8px 0;
+        }
+        .lastPriceTitle {
+            font-size: 20px !important;
+        }
+        .lastPrice{
+            margin-left: 10px;
+            font-size: 22px !important;
+        }
+        .buyerField{
+            .label{
+                font-family: $slimFont;
+                font-size: 14px;
+                letter-spacing: 2px;
+                font-weight: 500;
+                color: rgba($fondoObscuro,0.8);
+                text-shadow: 1px 1px 1px rgba($amarillo,0.3);
+                margin-left: 15px;
+                margin-bottom: 3px;
+            }
+            .button{
+                font-family: $slimFont;
+                font-size: 20px;
+                color: rgba($fondoMedio,0.9);
+                font-weight: 600;
+                letter-spacing: 1px;
+                padding: 0 13px;
+                border: transparent;
+                background-color: $amarillo;
+                border-radius: 25px;
+            }
+            .button:hover{
+                background-color: rgba($amarillo,0.8);
+                color: $fondoMedio;
+            }
+            .input{
+                background-color: rgba($blanco,0.8);
+            }
+            .input:active{
+                border: 2px solid $amarillo;
+            }
+            .input:focus{
+                border: 2px solid $amarillo;
+            }
+            .input.is-danger{
+                border: 2px solid $rojo;
+            }
+            .input.is-success{
+                border: 2px solid $colorPrincipal;
+            }
+            .icon{
+                color: rgba($fondoObscuro, 0.5) ;
+            }
+            .icon.has-text-danger{
+                color: $rojo !important;
+            }
+            .icon.has-text-success{
+                color: $colorPrincipal !important;
+            }
+            .help.is-danger{
+                font-size: 15px;
+                margin-left: 15px;
+                color: $rojo;
+                text-shadow: 1px 1px 1px rgba($fondoObscuro,0.3);
+            }
+        }
+        .is-grouped{
+            margin-top: 25px;
+            margin-bottom: 7px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (min-width: 415px){
+    .CheckoutBox{
+        .columns{
+            .box{
+                margin: 18px;
+                h3{
+                    font-size: 27px;
+                }
+            }
+            .serviceContainer{
+                .subtotalDescription{
+                    letter-spacing: 1px;
+                    padding: 5px 15px;
+                    .subtotalTitle{
+                        font-size: 20px;
+                        .fa-xmark{
+                            font-size: 22px;
+                        }
+                    }
+                    .subtotalContent{
+                        font-size: 18px;
+                        .fa-xmark{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .subTotal{
+                    letter-spacing: 3px;
+                    font-size: 25px;
+                }
+            }
+            hr {
+                margin: 10px 0 5px 0;
+            }
+            .lastPriceTitle {
+                font-size: 22px !important;
+            }
+            .lastPrice{
+                font-size: 25px !important;
+            }    
+            .buyerField{
+                .label{
+                    font-size: 16px;
+                }
+                .button{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 520px){
+    .CheckoutBox{
+        .columns{
+            .box{
+                margin: 20px;
+                padding: 17px;
+                h3{
+                    font-size: 30px;
+                }
+            }
+            .serviceContainer{
+                .subtotalDescription{
+                    letter-spacing: 2px;
+                    .subtotalTitle{
+                        font-size: 22px;
+                    }
+                    .subtotalContent{
+                        font-size: 20px;
+                        .fa-xmark{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .subTotal{
+                    letter-spacing: 3px;
+                    font-size: 27px;
+                }
+            }
+            .lastPriceTitle {
+                font-size: 25px !important;
+            }
+            .lastPrice{
+                font-size: 27px !important;
+            }    
+            .buyerField{
+                .label{
+                    font-size: 18px;
+                }
+                .button{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 769px){
+    .CheckoutBox{
+        .columns{
+            .box{
+                margin: 5px;
+                padding: 15px;
+            }
+            .serviceContainer{
+                .subtotalDescription{
+                    letter-spacing: 1px;
+                    .subtotalTitle{
+                        font-size: 20px;
+                    }
+                    .subtotalContent{
+                        font-size: 18px;
+                        .fa-xmark{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .subTotal{
+                    letter-spacing: 2px;
+                    font-size: 25px;
+                }
+            }
+            .lastPriceTitle {
+                font-size: 22px !important;
+            }
+            .lastPrice{
+                font-size: 25px !important;
+            }    
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .CheckoutTitle{
+        font-size: 35px;
+    }
+    .CheckoutBox{
+        .columns{
+            .box{
+                margin: 10px;
+                padding: 20px;
+            }
+            .serviceContainer{
+                .subtotalDescription{
+                    letter-spacing: 2px;
+                    .subtotalTitle{
+                        font-size: 22px;
+                        .fa-xmark{
+                            font-size: 22px;
+                        }
+                    }
+                    .subtotalContent{
+                        font-size: 20px;
+                        .fa-xmark{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .subTotal{
+                    letter-spacing: 3px;
+                    font-size: 30px;
+                }
+            }
+            .lastPriceTitle {
+                font-size: 25px !important;
+            }
+            .lastPrice{
+                font-size: 32px !important;
+            }
+            .buyerField{
+                .label{
+                    font-size: 20px;
+                    margin-left: 18px;
+                    margin-bottom: 5px;
+                }
+                .button{
+                    font-size: 25px;
+                    letter-spacing: 2px;
+                    border-radius: 35px;
+                }
+            }
+            .is-grouped{
+                margin-top: 45px;
+                margin-bottom: 10px;
+            }    
+        }
+    }
+}

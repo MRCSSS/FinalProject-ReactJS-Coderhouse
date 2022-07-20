@@ -1,0 +1,307 @@
+@import '../base';
+
+.Cart {
+    .EmptyCartBox{
+        margin: 20px;
+        background-color: $fondoMedio;
+        .fa-cart-shopping{
+            color: rgba($amarillo,0.5);
+            font-size: 65px;
+            margin: 20px 0;
+        }
+        h2{
+            font-family: $titleFont;
+            font-size: 25px;
+            color: $amarillo;
+            margin: 15px 0;
+        }
+        .button{
+            font-family: $slimFont;
+            font-size: 16px;
+            color: rgba($fondoMedio,0.9);
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 0 13px;
+            border: transparent;
+            background-color: $amarillo;
+            border-radius: 20px;
+        }
+        .button:hover{
+            background-color: rgba($amarillo,0.8);
+            color: $fondoMedio;
+        }
+
+    }
+    .ShoppingOrderTitle{
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+        color: $amarillo;
+        font-family: $titleFont;
+    }
+    .ShoppingOrderBox{
+        margin: 0 20px;
+        padding: 12px;
+        background-color: $fondoMedio;
+        .table{
+            background-color: transparent;
+            thead{
+                td{
+                    font-size: 19px;
+                    text-shadow: 1px 2px 2px $rojo;
+                    color: $amarillo;
+                    font-family: $titleFont;
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        color: $blanco;
+                        font-size: 15px;
+                        font-family: $slimFont;
+                        font-weight: 600;
+                        padding: 6px 0;
+                        .button{
+                            color: $amarillo;
+                            height: 32px;
+                            width: 32px;
+                            border-radius: 85%;
+                            border: transparent;
+                            background-color: $rojo;
+                            .fa-xmark{
+                                font-size: 22px;
+                            }
+                        }
+                        .button:hover{
+                            background-color: rgba($rojo,0.8);
+                            color: rgba($amarillo,0.9);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .OrderTotalBox{
+        margin: 20px;
+        background-color: $fondoMedio;
+        .OrderTotal{
+            width: 96%;
+            background-color: rgba($azul,0.2);
+            border-radius: 8px;
+            padding: 15px;
+            .OrderTotalContainerMessage{
+                h3{
+                    text-align: center !important;
+                    color: $amarillo;
+                    font-size: 20px;
+                    text-shadow: 3px 4px 2px $rojo;
+                    font-family: $titleFont;
+                    margin: 5px 5px;
+                }    
+            }
+            .OrderTotalContainerButtons{
+                margin-top: 15px;
+                .toCheckoutButton{
+                    font-family: $slimFont;
+                    font-size: 16px;
+                    color: rgba($fondoMedio,0.9);
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    padding: 0 13px;
+                    border: transparent;
+                    background-color: $amarillo;
+                    border-radius: 20px;
+                }
+                .toCheckoutButton:hover{
+                    background-color: rgba($amarillo,0.8);
+                    color: $fondoMedio;
+                }
+                .EmptyCartButton{
+                    font-family: $slimFont;
+                    font-size: 16px;
+                    background-color: transparent;
+                    letter-spacing: 1px;
+                    border: transparent;
+                    padding: 0;
+                    margin: 0 12px;
+                    color: rgb($blanco,0.9);
+                }
+                .EmptyCartButton:hover{
+                    color: rgba($blanco,0.8);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 769px){
+    .Cart {
+        .EmptyCartBox{
+            margin: 25px;
+            .fa-cart-shopping{
+                font-size: 80px;
+                margin: 20px 0;
+            }
+            h2{
+                font-size: 35px;
+                margin: 25px 0;
+            }
+            .button{
+                border-radius: 25px;
+                font-size: 20px;
+                padding: 0 18px;
+            }
+        }    
+        .ShoppingOrderTitle{
+            font-size: 33px;
+        }
+        .ShoppingOrderBox{
+            .table{
+                thead{
+                    td{
+                        font-size: 20px;
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            font-size: 20px;
+                            font-weight: 500;
+                            .button{
+                                height: 42px;
+                                width: 42px;
+                                .fa-xmark{
+                                    font-size: 28px;
+                                }
+                            }
+                            .container{
+                                .button{
+                                    height: 42px;
+                                    width: 42px;
+                                    border-radius: 85%;
+                                    color: rgba($fondoMedio,0.9);
+                                    border: transparent;
+                                    background-color: $amarillo;
+                                    .svg-inline--fa{
+                                        font-size: 22px;
+                                    }
+                                }
+                                .button:hover{
+                                    background-color: rgba($amarillo,0.8);
+                                    color: $fondoMedio;
+                                }
+                                .CountQuantity{
+                                    color: $blanco;
+                                    background-color: $fondoObscuro;
+                                    height: 35px;
+                                    width: 50px;
+                                    font-family: $slimFont;
+                                    font-weight: 600;
+                                    font-size: 22px;
+                                    margin: 0 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .OrderTotalBox{
+            .OrderTotal{
+                .OrderTotalContainerMessage{
+                    h3{
+                        font-size: 22px;
+                        margin: 2px 5px;
+                    }    
+                }
+                .OrderTotalContainerButtons{
+                    .toCheckoutButton{
+                        font-size: 18px;
+                    }
+                    .EmptyCartButton{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .Cart {
+        .EmptyCartBox{
+            margin: 35px;
+            .fa-cart-shopping{
+                font-size: 100px;
+                margin: 20px 0;
+            }
+            h2{
+                font-size: 50px;
+                margin: 55px 0;
+            }
+            .button{
+                border-radius: 35px;
+                font-size: 30px;
+                padding: 0 25px;
+            }
+        }    
+        .ShoppingOrderTitle{
+            font-size: 35px;
+        }
+        .ShoppingOrderBox{
+            .table{
+                thead{
+                    td{
+                        font-size: 22px;
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            font-weight: 600;
+                            // .image{
+                            //     img{
+                            //         border: transparent;
+                            //         border-radius: 50%;
+                            //         height: 42px;
+                            //         width: 42px;
+                            //     }
+                            // }
+                            .button{
+                                .fa-xmark{
+                                    font-size: 30px;
+                                }
+                            }
+                            .container{
+                                .button{
+                                    .svg-inline--fa{
+                                        font-size: 25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .OrderTotalBox{
+            .OrderTotal{
+                .OrderTotalContainerMessage{
+                    h3{
+                        font-size: 22px;
+                        margin: 5px 7px;
+                    }    
+                }
+                .OrderTotalContainerButtons{
+                    .toCheckoutButton{
+                        font-size: 19px;
+                    }
+                    .EmptyCartButton{
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+}

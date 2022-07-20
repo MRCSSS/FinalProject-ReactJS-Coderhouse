@@ -1,0 +1,233 @@
+@import '../base';
+
+.navbar{
+    background-color: $fondoObscuro;
+    height: 65px;
+    font-family: $titleFont;
+    color: $amarillo;
+    .navbarDesktop{
+        max-width: 1850px !important;
+        .navbarBrandDesktop{
+            margin: auto 2% auto 5%;
+            a {
+                .title{
+                    .image{
+                        img{
+                            max-height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        .navbarMenuDesktopContainer{
+            .navbarMenuDesktop{
+                .navbarMenuItem{
+                    display: flex;
+                    align-items: center;
+                    color: $amarillo;
+                    padding: 8px 12px;
+                    transition: background-color 150ms;
+                }
+                .navbarMenuItem:hover{
+                    background-color: rgba($fondoMedio,0.7);
+                    text-shadow: 5px 4px 2px rgba($rojo,1);
+                }
+                .navbarMenuDropdownItem{
+                    color: $amarillo;
+                    .navbar-link{
+                        background-color: transparent;
+                        .navbarMenuDropdownLink{
+                            color: $amarillo;
+                        }
+                    }
+                    .navbar-link:not(.is-arrowless)::after {
+                        border-color: $amarillo;
+                    }
+                    .navbar-dropdown {
+                        border: 0;
+                        background-color: $fondoMedio;
+                        box-shadow: 5px 4px 2px rgba($rojo,0.4);
+                        a{
+                            .navbar-item{
+                                justify-content: flex-end;
+                                color: $amarillo;
+                                transition: background-color 150ms;
+                            }
+                        }
+                        a:hover{
+                            .navbar-item{
+                                background-color: rgba($fondoObscuro,0.3);
+                                text-shadow: 5px 4px 2px rgba($rojo,1);
+                            }
+                        }
+                        .navbarsubMenuItem{
+                            padding: 0 !important;
+                            height: 33px;
+                            .navbar-link{
+                                padding: 8px 31px 8px 0;
+                                .subDropdownLink{
+                                    color: $amarillo;
+                                    padding: 6px 0 6px 16px;
+                                }
+                            }
+                            .subDropdown{
+                                padding-top: 0;
+                                display: none;
+                                background-color: rgba($fondoMedio, 0.9);
+                                min-width: 0;
+                                position: absolute;
+                                top: 32px;
+                                left: 37px;
+                            }
+                        }
+                        .navbarsubMenuItem:hover{
+                            background-color: rgba($fondoObscuro,0.3);
+                            .navbar-link{
+                                .subDropdownLink{
+                                    text-shadow: 5px 4px 2px rgba($rojo,1);
+                                }
+                            }
+                            .subDropdown{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .navbarMenuDropdownItem:hover{
+                    background-color: rgba($fondoMedio,0.7);
+                    .navbarMenuDropdownLink{
+                        text-shadow: 5px 4px 2px rgba($rojo,1);
+                    }
+                }
+
+            }
+        }
+        .navbarWidgetsDesktop{
+            width: auto;
+            margin: auto 25px auto 15px;
+        }
+    }
+    .navbarMobile{
+        font-size: 25px;
+        .navbar-burger{
+            border-radius: 6px;
+            transition: background-color 150ms;
+            margin: 0;
+            color: $amarillo;
+            height: 60px;
+            width: 60px;
+            span{
+                height: 2px;
+                width: 18px;
+            }
+        }
+        .navbar-burger:hover{
+            background-color: $fondoMedio;
+        }
+        .navBarMenu{
+            position: absolute;
+            top: 65px;
+            left: 0;
+            background-color: $fondoMedio;
+            padding: 0;
+            .navbarMenuItem{
+                display: flex;
+                align-items: center;
+                color: $amarillo;
+                padding: 15px 25px;
+                transition: background-color 150ms;
+            }
+            .navbarMenuItem:hover{
+                background-color: rgba($fondoObscuro,0.7);
+                text-shadow: 5px 4px 2px rgba($rojo,1);
+            }
+            .navbarMenuDropdown{
+                padding: 0;
+                .navbarMenuDropdownLink{
+                    color: $amarillo;
+                }
+                .navbar-link{
+                    padding: 15px 35px 15px 25px;
+                    transition: background-color 150ms;
+                }
+                .navbar-link:hover{
+                    background-color: rgba($fondoObscuro,0.7) !important;
+                    text-shadow: 5px 4px 2px rgba($rojo,1);
+                }
+                .navbar-link:not(.is-arrowless)::after {
+                    border-color: $amarillo;
+                }
+                .navbar-dropdown {
+                    background-color: rgba($fondoMedio, 0.9);
+                    padding: 0;
+                    a{
+                        font-size: 20px;
+                        .navbar-item{
+                            color: $amarillo;
+                            padding-left: 42px;
+                            padding-right: 40px;
+                            transition: background-color 150ms;
+                        }
+                    }
+                    a:hover{
+                        .navbar-item{
+                            background-color: rgba($fondoObscuro, 0.6);
+                            text-shadow: 5px 4px 2px rgba($rojo,1);
+                        }
+                    }
+                }
+            }
+            .navbarMenuDropdown:hover{
+                background-color: rgba($fondoObscuro, 0.6);
+                .navbarMenuDropdownLink{
+                    text-shadow: 5px 4px 2px rgba($rojo,1);
+                }
+            }
+            .navbarsubMenuItem{
+                padding: 0;
+                .navbar-link{
+                    padding: 8px 31px 8px 0;
+                    .subDropdownLink{
+                        color: $amarillo;
+                        padding: 6px 10px 6px 42px;
+                    }
+                }
+                .subDropdown{
+                    .navbar-item{
+                        padding: 5px 0 5px 60px !important;
+                    }
+                }
+            }
+            .navbarsubMenuItem:hover{
+                background-color: rgba($fondoObscuro, 0.6);
+                .subDropdownLink{
+                    text-shadow: 5px 4px 2px rgba($rojo,1);
+                }
+            }
+        }
+        .navbarBrandMobile{
+            margin: auto 2% auto 5%;
+            a {
+                .title{
+                    .image{
+                        img{
+                            max-height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Toastify__toast-container {
+        .Toastify__toast-theme--colored.Toastify__toast--success {
+            background-color: $colorPrincipal;
+        }
+        .Toastify__toast-theme--colored.Toastify__toast--warning {
+            background-color: $amarillo;
+        }
+        .Toastify__toast-theme--colored.Toastify__toast--error {
+            background-color: $rojo;
+        }
+    
+    }
+}

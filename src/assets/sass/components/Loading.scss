@@ -1,0 +1,49 @@
+@import '../base';
+
+@keyframes loader {
+    100% {transform: scale(1.75) translateY(-20px)}
+}
+
+.SquareLoaderContainer {
+    max-width: 100% !important;
+    height: calc(100vh - 340px);
+    margin: 15px 0 !important;
+    .SquareLoader {
+        .square {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            margin: 10px;
+            animation-name: loader;
+            animation-duration: 0.75s;
+            animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            background-color: $amarillo;
+        }
+        .square1 {
+            animation-delay: 0;
+        }
+        .square2 {
+            animation-delay: calc(0s + (0.1s * 1));
+        }
+        .square3 {
+            animation-delay: calc(0s + (0.1s * 2));
+        }
+        .square4 {
+            animation-delay: calc(0s + (0.1s * 3));
+        }
+        .square5 {
+            animation-delay: calc(0s + (0.1s * 4));
+        }
+    }
+    .SquareTitle{
+        font-family: $titleFont;
+        font-size: 30px;
+        color: $amarillo;
+        text-shadow: 5px 5px 1px $rojo;
+    }
+}

@@ -1,0 +1,46 @@
+@import '../base';
+
+.ItemCount{
+    background-color: rgba($azul,0.4);
+    border-radius: 25px;
+    padding: 0 0 8px 0;
+    .Count{
+        margin: 6px 0;
+        .button{
+            height: 35px;
+            width: 35px;
+            border-radius: 85%;
+            color: rgba($fondoMedio,0.9);
+            border: transparent;
+            background-color: $amarillo;
+        }
+        .button:hover{
+            background-color: rgba($amarillo,0.8);
+            color: $fondoMedio;
+        }
+        .CountQuantity{
+            color: $blanco;
+            background-color: $fondoObscuro;
+            height: 40px;
+            width: 55px;
+            font-family: $slimFont;
+            font-weight: 600;
+            font-size: 27px;
+            margin: 0 15px;
+        }
+    }
+    .AddToCartButton{
+        font-family: $slimFont;
+        color: rgba($fondoMedio,0.9);
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 0 8px;
+        border: transparent;
+        background-color: $amarillo;
+        border-radius: 20px;
+    }
+    .AddToCartButton:hover{
+        background-color: rgba($amarillo,0.8);
+        color: $fondoMedio;
+    }
+}

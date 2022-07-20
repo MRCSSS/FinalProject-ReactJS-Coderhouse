@@ -1,0 +1,64 @@
+@import '../base';
+
+.Item{
+    border-radius: 17px;
+    width: 300px;
+    margin: 25px 22px;
+    background-color: $fondoMedio;
+    color: $amarillo;
+    .cardImg {
+        .image{
+            img{
+                height: 225px !important;
+                width: 300px !important;
+                border-radius: 17px 17px 5px 5px;
+            }
+        }
+    }
+    .cardContent{
+        width: 300px;
+        height: 235px;
+        padding: 25px 15px;
+        .media{
+            margin: 0;
+            .media-content{
+                width: 100%;
+                height: 100px;
+                margin: 0;
+                .cardTitle{
+                    font-family: $titleFont;
+                    font-size: 22px;
+                }
+                .cardDescrip{
+                    color: rgba($amarillo, 0.8);
+                    font-family: $slimFont;
+                    font-weight: 500;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    margin-top: 0;
+                }
+            }
+        }
+        .content{
+            .cardPrice{
+                font-family: $subtitleFont;
+                margin: 15px 0 8px 0;
+                letter-spacing: 1px;
+                font-size: 20px;
+            }
+            .cardButton{
+                border-radius: 20px;
+                font-family: $subtitleFont;
+                background-color: $amarillo !important;
+                .cardButtonLink{
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    color: $fondoObscuro !important;
+                }
+            }
+            .cardButton:hover{
+                background-color: rgba($amarillo, 0.8) !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+[
+    {"id": "die1", "title": "Dieta 1", "description": "Dieta", "price": 220, "imgURL": ""},
+    {"id": "die2", "title": "Dieta 2", "description": "Dieta", "price": 220, "imgURL": ""},
+    {"id": "rut1", "title": "Rutina 1", "description": "Rutina", "price": 700, "imgURL": ""},
+    {"id": "rut2", "title": "Rutina 2", "description": "Rutina", "price": 700, "imgURL": ""},
+    {"id": "pqt1", "title": "Paquete 1", "description": "Paquete", "price": 700, "imgURL": ""},
+    {"id": "pqt2", "title": "Paquete 2", "description": "Paquete", "price": 700, "imgURL": ""},
+    {"id": "prm1", "title": "Promoción 1", "description": "Promoción", "price": 5000, "imgURL": ""},
+    {"id": "prm2", "title": "Promoción 2", "description": "Promoción", "price": 5000, "imgURL": ""}
+]

@@ -1,0 +1,39 @@
+/* Includes typography, variables, mixins */
+
+
+/* -------- TYPOGRAPHY -------- */ 
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Ops+One&family=Merriweather:ital,wght@1,300;1,400;1,900&family=Oswald:wght@200;400;500&display=swap');
+
+$titleFont: 'Black Ops One', cursive;
+$subtitleFont: 'Alfa Slab One', cursive;
+$slimFont: 'Oswald', sans-serif;
+
+
+/* --------- VARIABLES --------- */ 
+// Colores
+$fondoObscuro: #041100;
+$fondoMedio: #143613;
+$fondoClaro: #013d01;
+$colorPrincipal: #005E00;
+$rojo: #890F06;
+$azul: #8CAEA6;
+$amarillo: #FFCB1F;
+$blanco: #FFFFFF;
+
+
+/* ---------- MIXINS ---------- */ 
+
+/* ---------- EXPORTS ---------- */ 
+:export {
+    titleFont: $titleFont;
+    subtitleFont: $subtitleFont;
+    slimFont: $slimFont;
+    fondoObscuro: $fondoObscuro;
+    fondoMedio: $fondoMedio;
+    fondoClaro: $fondoClaro;
+    colorPrincipal: $colorPrincipal;
+    rojo: $rojo;
+    azul: $azul;
+    amarillo: $amarillo;
+    blanco: $blanco;
+}

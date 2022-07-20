@@ -1,0 +1,212 @@
+@import '../base';
+
+.ItemDetail {
+    .ItemDetailTitle{
+        margin: 12px 0 10px 0 !important;
+        font-size: 35px;
+        color: $amarillo;
+        font-family: $titleFont;
+    }
+    .DesktopItemDetailBox{
+        background-color: $fondoMedio;
+        .DesktopItemDetailBoxColumns{
+            .DetailInfoColumn{
+                .ProductTitle{
+                    font-family: $titleFont;
+                    text-shadow: 3px 3px 0 $rojo;
+                    font-size: 30px;
+                    margin: 10px 0;
+                    color: $amarillo;
+                }
+                .ProductSubtitle{
+                    font-family: $subtitleFont;
+                    font-size: 16px;
+                    text-align: justify;
+                    color: $amarillo;
+                }
+                .ProductDescription{
+                    text-align: justify;
+                    font-family: $subtitleFont;
+                    font-size: 13px;
+                    color: rgba($amarillo,0.8);
+                }
+            }
+            .DetailImgColumn{
+                .image{
+                    img{
+                        border-radius: 22px;
+                    }
+                }
+            }
+            .DetailCountColumn{
+                .PriceTitle{
+                    font-family: $titleFont;
+                    letter-spacing: 2px;
+                    font-size: 20px;
+                    margin: 0 0 8px 0;
+                    color: $amarillo;
+                }
+                .ProductPrice{
+                    font-family: $subtitleFont;
+                    letter-spacing: 5px;
+                    margin: 0 0 18px 0;
+                    font-size: 22px;
+                    color: $amarillo;
+                }
+                .ActionProductBox{
+                    padding: 10px;
+                    border-radius: 35px;
+                    background-color: rgba($azul,0.3);
+                    .shownBox{
+                        padding: 10px;
+                        font-family: $slimFont;
+                        font-weight: 500;
+                        font-size: 20px;
+                        color: $blanco;
+                        background-color: rgba($azul,0.4);
+                        border-radius: 25px;
+                        .shownBoxText{
+                            margin: 0;
+                        }
+                        .toCartButton{
+                            font-family: $slimFont;
+                            color: rgba($fondoMedio,0.9);
+                            font-weight: 600;
+                            letter-spacing: 1px;
+                            padding: 0 13px;
+                            border: transparent;
+                            background-color: $amarillo;
+                            border-radius: 20px;
+                        }
+                        .toCartButton:hover{
+                            background-color: rgba($amarillo,0.8);
+                            color: $fondoMedio;
+                        }
+                        .deleteThisButton{
+                            font-family: $slimFont;
+                            background-color: transparent;
+                            letter-spacing: 1px;
+                            border: transparent;
+                            padding: 0;
+                            margin: 0 12px;
+                            color: rgb($blanco,0.9);
+                        }
+                        .deleteThisButton:hover{
+                            color: rgba($blanco,0.8);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .MobileItemDetailBox{
+        background-color: $fondoMedio;
+        .image{
+            img{
+                max-width: 650px;
+                border-radius: 18px;
+            }
+        }
+        .ProductTitle{
+            font-family: $titleFont;
+            font-size: 32px;
+            margin: 8px 0;
+            text-shadow: 3px 3px 0 $rojo;
+            color: $amarillo;
+        }
+        .ProductSubtitle{
+            text-align: center;
+            font-family: $subtitleFont;
+            font-size: 26px;
+            color: $amarillo;
+        }
+        .ProductDescription{
+            text-align: justify;
+            font-family: $subtitleFont;
+            font-size: 23px;
+            color: rgba($amarillo,0.8);
+        }
+        .ProductPrice{
+            font-family: $subtitleFont;
+            letter-spacing: 5px;
+            margin: 0 0 18px 0;
+            font-size: 22px;
+            color: $amarillo;
+        }
+        .ActionProductBox{
+            padding: 10px;
+            border-radius: 35px;
+            background-color: rgba($azul,0.3);
+            .shownBox{
+                padding: 10px;
+                font-family: $slimFont;
+                font-weight: 500;
+                font-size: 20px;
+                color: $blanco;
+                background-color: rgba($azul,0.4);
+                border-radius: 25px;
+                .shownBoxText{
+                    margin: 0 0 10px 0;
+                }
+                .toCartButton{
+                    font-family: $slimFont;
+                    color: rgba($fondoMedio,0.9);
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    padding: 0 13px;
+                    border: transparent;
+                    background-color: $amarillo;
+                    border-radius: 20px;
+                }
+                .toCartButton:hover{
+                    background-color: rgba($amarillo,0.8);
+                    color: $fondoMedio;
+                }
+                .deleteThisButton{
+                    font-family: $slimFont;
+                    background-color: transparent;
+                    letter-spacing: 1px;
+                    border: transparent;
+                    padding: 0;
+                    margin: 0 12px;
+                    color: rgb($blanco,0.9);
+                }
+                .deleteThisButton:hover{
+                    color: rgba($blanco,0.8);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .ItemDetail {
+        .DesktopItemDetailBox{
+            .DesktopItemDetailBoxColumns{
+                .DetailInfoColumn{
+                    .ProductTitle{
+                        font-size: 23px;
+                    }
+                    .ProductSubtitle{
+                        font-size: 12px;
+                    }
+                    .ProductDescription{
+                        font-size: 10px;
+                    }
+                }
+                .DetailCountColumn{
+                    .PriceTitle{
+                        font-size: 18px;
+                    }
+                    .ProductPrice{
+                        font-family: $subtitleFont;
+                        letter-spacing: 4px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

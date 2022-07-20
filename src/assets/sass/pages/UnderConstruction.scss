@@ -1,0 +1,33 @@
+@import '../base';
+
+.UnderConstructionBox{
+    margin: 20px;
+    background-color: $fondoMedio;
+    .fa-triangle-exclamation{
+        color: $amarillo;
+        font-size: 65px;
+        margin: 30px 0;
+    }
+    h2{
+        font-family: $titleFont;
+        font-size: 25px;
+        color: $amarillo;
+        margin: 25px 0;
+    }
+    .button{
+        font-family: $slimFont;
+        font-size: 16px;
+        color: rgba($fondoMedio,0.9);
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 0 13px;
+        border: transparent;
+        background-color: $amarillo;
+        border-radius: 20px;
+    }
+    .button:hover{
+        background-color: rgba($amarillo,0.8);
+        color: $fondoMedio;
+    }
+
+}
